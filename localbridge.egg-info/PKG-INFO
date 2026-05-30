@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: localbridge
+Version: 0.1.0
+Summary: Selective MITM Proxy with SOCKS5 - tunnel pinned, intercept non-pinned
+Home-page: https://github.com/vhdrjb/Local-Bridge
+Author: LocalBridge Contributors
+Author-email: panda.soft.group@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Networking :: Proxy Servers
+Requires-Python: >=3.9
+Requires-Dist: cryptography>=41.0.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: loguru>=0.7.0
+Provides-Extra: performance
+Requires-Dist: uvloop>=0.17.0; extra == "performance"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
