@@ -1,0 +1,16 @@
+# LocalBridge - Requirements
+#
+# Core dependencies for the selective MITM SOCKS5 proxy.
+
+# TLS/SSL certificate operations (CA generation, dynamic cert signing)
+cryptography>=41.0.0
+
+# YAML configuration parsing for pinned domains list
+pyyaml>=6.0
+
+# Enhanced structured logging with rotation and filtering
+loguru>=0.7.0
+
+# Optional: High-performance event loop (Linux/macOS only)
+# Uncomment if running on Linux/macOS for improved async performance
+# uvloop>=0.17.0

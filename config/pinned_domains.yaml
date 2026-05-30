@@ -1,0 +1,55 @@
+# LocalBridge - Pinned Domains Configuration
+#
+# Domains listed here will NEVER be intercepted by the MITM proxy.
+# Traffic to these domains is tunneled transparently so that
+# certificate-pinned applications see legitimate server certificates.
+#
+# Format: One domain per line. Supports wildcards using * prefix.
+# Lines starting with # are comments.
+
+pinned_domains:
+  # Telegram - Certificate pinned messaging app
+  - "*.telegram.org"
+  - "*.telegram.me"
+  - "*.t.me"
+  - "149.154.167.0/24"
+  - "149.154.175.0/24"
+  - "91.108.4.0/24"
+  - "91.108.56.0/24"
+
+  # YouTube / Google Video - Certificate pinned streaming
+  - "*.googlevideo.com"
+  - "*.youtube.com"
+  - "*.ytimg.com"
+  - "*.gstatic.com"
+  - "*.googleapis.com"
+
+  # WhatsApp - End-to-end encrypted messaging
+  - "*.whatsapp.net"
+  - "*.whatsapp.com"
+  - "web.whatsapp.com"
+
+  # Signal - Privacy-focused messaging
+  - "*.signal.org"
+  - "*.whispersystems.org"
+
+  # Google Services - Certificate pinned authentication
+  - "accounts.google.com"
+  - "play.googleapis.com"
+
+  # Apple / iOS - Certificate pinned ecosystem services
+  - "*.apple.com"
+  - "*.icloud.com"
+
+  # Microsoft - Certificate pinned authentication
+  - "*.live.com"
+  - "*.microsoftonline.com"
+  - "login.microsoftonline.com"
+
+  # Social Media - Often certificate pinned
+  - "*.instagram.com"
+  - "*.facebook.com"
+
+  # GitHub - Developer platform with certificate pinning
+  - "github.com"
+  - "api.github.com"

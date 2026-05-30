@@ -1,0 +1,11 @@
+# LocalBridge - Pinned Domains User Override
+#
+# Add your own pinned domains here. These will be combined with
+# the default pinned domains from pinned_domains.yaml.
+#
+# One domain per line. Supports wildcards using * prefix.
+# Lines starting with # are comments.
+#
+# Examples:
+# *.mybank.com
+# *.private-service.com
